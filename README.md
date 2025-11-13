@@ -16,42 +16,6 @@ Permite gerenciar gastos, categorias e usuários, tudo via console, de forma sim
 
 ---
 
-## Estrutura do Projeto
-
-src/
-└── main/
-└── java/
-└── com.lucascauan.financeiro/
-├── app/ # Contém as classes principais e menus
-│ ├── AppFinanceira.java
-│ ├── MenuPrincipal.java
-│ ├── TelaAnotarPagamento.java
-│ ├── TelaCadastroDespesa.java
-│ ├── TelaGerenciarUsuarios.java
-│ └── TelaListarDespesas.java
-│
-├── model/ # Modelos de dados (entidades)
-│ ├── Categoria.java
-│ ├── Despesa.java
-│ ├── DespesaAlimentacao.java
-│ ├── DespesaMoradia.java
-│ ├── Gasto.java
-│ ├── Pagavel.java
-│ └── Usuario.java
-│
-├── repository/ # Repositórios e simulação de banco
-│ └── RepositorioGastos.java
-│
-└── service/ # Regras de negócio e interfaces
-├── GerenciadorDespesas.java
-├── GerenciadorFinanceiro.java
-├── GerenciadorUsuarios.java
-├── IGerenciadorFinanceiro.java
-└── Seguranca.java
-
-
----
-
 ## Tecnologias Utilizadas
 
 - Java 17+
