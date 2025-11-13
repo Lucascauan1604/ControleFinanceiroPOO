@@ -26,34 +26,15 @@ ControleFinanceiro/
 │           └── com/
 │               └── lucascauan/
 │                   └── financeiro/
-│                       ├── app/
-│                       │   ├── AppFinanceira.java
-│                       │   ├── MenuPrincipal.java
-│                       │   ├── TelaAnotarPagamento.java
-│                       │   ├── TelaCadastroDespesa.java
-│                       │   ├── TelaGerenciarUsuarios.java
-│                       │   └── TelaListarDespesas.java
-│                       ├── model/
-│                       │   ├── Categoria.java
-│                       │   ├── Despesa.java
-│                       │   ├── DespesaAlimentacao.java
-│                       │   ├── DespesaMoradia.java
-│                       │   ├── Gasto.java
-│                       │   ├── Pagavel.java
-│                       │   └── Usuario.java
-│                       ├── repository/
-│                       │   └── RepositorioGastos.java
-│                       └── service/
-│                           ├── GerenciadorDespesas.java
-│                           ├── GerenciadorFinanceiro.java
-│                           ├── GerenciadorUsuarios.java
-│                           ├── IGerenciadorFinanceiro.java
-│                           └── Seguranca.java
-├── despesas.txt
-├── tipos_despesa.txt
-├── usuarios.txt
+│                       ├── app/           # Classes principais e menus
+│                       ├── model/         # Modelos de dados (entidades)
+│                       ├── repository/    # Repositórios e simulação de banco
+│                       └── service/       # Regras de negócio e interfaces
+├── despesas.txt         # Lista de despesas registradas
+├── tipos_despesa.txt    # Tipos de gastos pré-cadastrados
+├── usuarios.txt         # Lista de usuários simulada
 └── docs/
-    └── README.md
+    └── README.md        # Documentação do projeto
 ```
 
 ---
@@ -120,3 +101,22 @@ Repositório reformulado com foco em boas práticas e modularização do código
 - Arquivos TXT para simulação de persistência
 - Documentação inicial do projeto
 
+---
+
+## Planejamento e Prioridades
+
+### Separação de Prioridades
+- **Essencial:** Cadastro, listagem e remoção de despesas; gerenciamento de usuários; persistência simulada.
+- **Desejável:** Filtros por categoria, cálculo de médias, detalhamento de despesas, autenticação simples.
+- **Extra:** Interface gráfica, integração com banco de dados real, relatórios avançados.
+
+### POC (Prova de Conceito)
+- Estrutura básica funcional (cadastro, listagem, remoção).
+- Testes de uso via console.
+- Validação dos principais fluxos do sistema.
+
+### MVP (Produto Mínimo Viável)
+- Cadastro e listagem de despesas e usuários.
+- Persistência simulada em arquivos TXT.
+- Menu principal funcional.
+- Documentação clara e exemplos de uso.
