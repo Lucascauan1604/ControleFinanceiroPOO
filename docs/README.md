@@ -114,4 +114,3 @@ O MVP está pronto e documentado neste repositório de produção. Todas as func
 
 ---
 
-Para dúvidas ou sugestões, consulte o professor ou envie mensagem pelo sistema acadêmico.
