@@ -103,20 +103,15 @@ Repositório reformulado com foco em boas práticas e modularização do código
 
 ---
 
-## Planejamento e Prioridades
+## MVP FINAL
 
-### Separação de Prioridades
-- **Essencial:** Cadastro, listagem e remoção de despesas; gerenciamento de usuários; persistência simulada.
-- **Desejável:** Filtros por categoria, cálculo de médias, detalhamento de despesas, autenticação simples.
-- **Extra:** Interface gráfica, integração com banco de dados real, relatórios avançados.
+O MVP está pronto e documentado neste repositório de produção. Todas as funcionalidades essenciais estão implementadas e testadas. O projeto está pronto para ser utilizado, expandido ou integrado a novas tecnologias.
 
-### POC (Prova de Conceito)
-- Estrutura básica funcional (cadastro, listagem, remoção).
-- Testes de uso via console.
-- Validação dos principais fluxos do sistema.
+### Tags de Git sugeridas para versionamento:
+- `v1.0.0` - MVP inicial e estável
+- `v1.1.0` - Melhorias e correções
+- `v2.0.0` - Expansão para interface gráfica ou persistência real
 
-### MVP (Produto Mínimo Viável)
-- Cadastro e listagem de despesas e usuários.
-- Persistência simulada em arquivos TXT.
-- Menu principal funcional.
-- Documentação clara e exemplos de uso.
+---
+
+Para dúvidas ou sugestões, consulte o professor ou envie mensagem pelo sistema acadêmico.
