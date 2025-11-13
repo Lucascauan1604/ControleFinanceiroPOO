@@ -65,7 +65,7 @@ src/
 
  Clone o repositório:
    ```bash```
-   git clone https://github.com/SEU_USUARIO/ControleFinanceiro.git
+   git clone https://github.com/Lucascauan1604/ControleFinanceiroPOO.git
 Abra o projeto em sua IDE Java (IntelliJ, Eclipse, VS Code, etc.)
 
 Localize a classe principal:
