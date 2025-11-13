@@ -70,7 +70,10 @@ src/
 Abra o projeto em sua IDE Java (IntelliJ, Eclipse, VS Code, etc.)
 
 Localize a classe principal:
+  ```bash
 com.lucascauan.financeiro.app.AppFinanceira
+  ```
+
 Execute o programa (Run)
 
 Conceitos de POO Aplicados
