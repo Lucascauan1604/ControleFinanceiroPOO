@@ -1,25 +1,101 @@
-# ControleFinanceiro
+# Sistema de Controle Financeiro (POO em Java)
 
-Versão reformulada de um sistema de controle de despesas para entrega acadêmica.
+Um sistema de controle de despesas pessoais desenvolvido em Java com base nos princípios da Programação Orientada a Objetos (POO).  
+Permite gerenciar gastos, categorias e usuários, tudo via console, de forma simples e organizada.
 
-## Sobre
-Aplicação em Java (console) que permite registrar, listar e remover gastos. Os dados são mantidos em memória (ArrayList) — ao encerrar a aplicação, os dados são perdidos.
+---
 
-## Estrutura
-- Pacotes: `com.lucascauan.financeiro.model`, `repository`, `service`, `app`.
+## Funcionalidades
 
-## Como executar
-1. Abra a pasta do projeto e compile os arquivos Java (por exemplo usando `javac`).
-2. Execute a classe principal `com.lucascauan.financeiro.app.AppFinanceira`.
+- Cadastro de despesas (alimentação, moradia, lazer etc.)
+- Registro de pagamentos e valores
+- Gerenciamento de usuários
+- Listagem e totalização de despesas
+- Aplicação de interfaces, herança e polimorfismo
+- Armazenamento temporário em memória (ArrayList)
 
-Exemplo (Linux / Mac / Windows com terminal):
+---
 
-```bash
-# dentro da pasta src
-javac -d out $(find . -name "*.java")
-java -cp out com.lucascauan.financeiro.app.AppFinanceira
+## Estrutura do Projeto
+
+src/
+└── main/
+└── java/
+└── com.lucascauan.financeiro/
+├── app/ # Contém as classes principais e menus
+│ ├── AppFinanceira.java
+│ ├── MenuPrincipal.java
+│ ├── TelaAnotarPagamento.java
+│ ├── TelaCadastroDespesa.java
+│ ├── TelaGerenciarUsuarios.java
+│ └── TelaListarDespesas.java
+│
+├── model/ # Modelos de dados (entidades)
+│ ├── Categoria.java
+│ ├── Despesa.java
+│ ├── DespesaAlimentacao.java
+│ ├── DespesaMoradia.java
+│ ├── Gasto.java
+│ ├── Pagavel.java
+│ └── Usuario.java
+│
+├── repository/ # Repositórios e simulação de banco
+│ └── RepositorioGastos.java
+│
+└── service/ # Regras de negócio e interfaces
+├── GerenciadorDespesas.java
+├── GerenciadorFinanceiro.java
+├── GerenciadorUsuarios.java
+├── IGerenciadorFinanceiro.java
+└── Seguranca.java
+
+
+---
+
+## Tecnologias Utilizadas
+
+- Java 17+
+- Paradigma POO
+- Collections (ArrayList)
+- Interfaces e herança
+
+---
+
+## Como Executar
+
+ Clone o repositório:
+   ```bash
+   git clone https://github.com/Lucascauan1604/ControleFinanceiroPOO.git
 ```
+Abra o projeto em sua IDE Java (IntelliJ, Eclipse, VS Code, etc.)
 
-## Notas
-- Os nomes de classes e pacotes foram alterados para diferenciar do repositório original.
-- Mantive a simplicidade: persistência em memória usando `ArrayList`.
+Localize a classe principal:
+  ```bash
+com.lucascauan.financeiro.app.AppFinanceira
+  ```
+
+Execute o programa (Run)
+
+Conceitos de POO Aplicados
+
+Encapsulamento: controle de acesso via getters e setters.
+
+Herança: classes de despesas específicas (ex: DespesaAlimentacao herda de Despesa).
+
+Polimorfismo: uso da interface Pagavel e classes concretas que a implementam.
+
+Abstração: divisão clara entre camadas (model, service, repository, app).
+
+| Arquivo             | Descrição                                |
+| ------------------- | ---------------------------------------- |
+| `despesas.txt`      | Lista de despesas registradas (simulada) |
+| `tipos_despesa.txt` | Tipos de gastos pré-cadastrados          |
+| `.gitignore`        | Arquivos ignorados pelo Git              |
+| `README.md`         | Documentação do projeto                  |
+
+
+Autor
+
+Lucas Cauan Inomata
+Projeto acadêmico desenvolvido para disciplina de Programação Orientada a Objetos (POO).
+Repositório reformulado com foco em boas práticas e modularização do código.
