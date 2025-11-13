@@ -1,0 +1,4 @@
+# despesas.txt
+# id;descricao;valor;data;categoria;fixa;paga
+
+

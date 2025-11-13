@@ -1,0 +1,10 @@
+# usuarios.txt
+# nome;senha
+package com.lucascauan.financeiro.model;
+
+public class Despesa extends Gasto {
+    public Despesa(int id, String descricao, double valor, java.time.LocalDate data, Categoria categoria) {
+        super(id, descricao, valor, data, categoria);
+    }
+}
+

@@ -1,0 +1,3 @@
+# tipos_despesa.txt
+# alimentacao, transporte, lazer, saude, moradia, outros
+
